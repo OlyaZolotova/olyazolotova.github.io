@@ -22,7 +22,9 @@ src: url(../img/Aquarelle.ttf);
 body {
   background-color: #fbfbfb;
   position: relative;
-  overflow-x: hidden;
+}
+html, body {
+      overflow-x: hidden;
 }
 .container {
   max-width: 320px;
