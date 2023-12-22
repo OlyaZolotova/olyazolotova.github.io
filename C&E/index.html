@@ -1,0 +1,672 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style/style.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Wedding day</title>
+  </head>
+
+  <body id="container">
+    <main>
+      <div class="main">
+        <div class="container__main">
+          <div class="main__mainwrap">
+            <h1 class="main__title">24</h1>
+            <h1 class="main__title">02</h1>
+            <h1 class="main__title">24</h1>
+          </div>
+          <div class="main__textwrap">
+            <h1 class="main__text main__text-s">Сергей</h1>
+            <h1 class="main__text main__text-a">and</h1>
+            <h1 class="main__text main__text-e">Екатерина</h1>
+          </div>
+        </div>
+      </div>
+      <div class="information">
+        <div class="container">
+          <h4 class="information__title">Дорогие родные и друзья!</h4>
+          <div class="information__textwrap">
+            <p class="information__text">
+              В нашей жизни произойдет очень важное событие - наша свадьба!
+            </p>
+            <p class="information__text">
+              Позвольте пригласить Вас-разделить с нами радость этого
+              дня. Подарите свою поддержку и добрые пожелания,а мы в свою
+              очередь поделимся частичкой нашего счастья.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="timer">
+        <div class="container">
+          <h4 class="timer__title">Ждем вас через:</h4>
+          <!-- <div id="hearts" class="timer__hearts"></div> -->
+            <div class="timer__wrapper" id="countdown">
+              <div id="hearts" class="timer__hearts"></div>
+            </div>
+        </div>
+      </div>
+      <div class="timing">
+        <div class="container container__timing">
+          <svg
+            class="timing__svg2"
+            width="260"
+            height="535"
+            viewBox="0 0 260 535"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M56 200L55.8469 200.476L56 200ZM139.234 459.5L139.702 459.676L139.707 459.664L139.711 459.652L139.234 459.5ZM111.509 533.832C111.417 534.092 111.552 534.378 111.813 534.471C112.073 534.564 112.359 534.428 112.451 534.168L111.509 533.832ZM126.234 494L125.766 493.824L125.763 493.832L126.234 494ZM77.7344 439.5L77.8908 439.975L77.9083 439.969L77.9254 439.962L77.7344 439.5ZM49.5401 347.192L49.4593 346.698L49.5401 347.192ZM181.338 45.3841L181.309 45.8833L181.338 45.3841ZM67.8722 344.189L67.7914 343.696L67.8722 344.189ZM192.408 278.67L192.324 278.177L192.408 278.67ZM2.38742 418.971L1.89545 419.06L2.38742 418.971ZM234.198 48.4838L234.227 47.9847L234.198 48.4838ZM51.4522 448.155L51.2958 447.68L51.4522 448.155ZM154.557 285.151L154.473 284.658L154.557 285.151ZM143.389 446.5L142.913 446.348L143.389 446.5ZM159.72 187.384L159.572 186.906L159.72 187.384ZM193.026 190.807L192.807 191.257L193.026 190.807ZM204.182 196.243L203.963 196.692L204.182 196.243ZM1.67259 415.032L1.18062 415.121L1.67259 415.032ZM9.0691 123.666L9.5674 123.625L9.0691 123.666ZM242.932 1.9311L243.085 1.45529L242.932 1.9311ZM112.451 534.168L113.639 530.835L112.697 530.499L111.509 533.832L112.451 534.168ZM116.015 524.168L118.391 517.501L117.449 517.165L115.073 523.832L116.015 524.168ZM120.766 510.835L123.142 504.168L122.2 503.832L119.824 510.499L120.766 510.835ZM125.518 497.501L126.705 494.168L125.763 493.832L124.576 497.165L125.518 497.501ZM126.702 494.176L127.786 491.301L126.85 490.949L125.767 493.824L126.702 494.176ZM129.952 485.551L132.119 479.801L131.183 479.449L129.017 485.199L129.952 485.551ZM134.286 474.051L136.452 468.301L135.517 467.949L133.35 473.699L134.286 474.051ZM138.619 462.551L139.702 459.676L138.767 459.324L137.683 462.199L138.619 462.551ZM139.711 459.652L140.749 456.402L139.797 456.098L138.758 459.348L139.711 459.652ZM142.827 449.903L143.865 446.653L142.913 446.348L141.874 449.598L142.827 449.903ZM143.865 446.653C144.241 445.476 144.503 444.304 144.658 443.145L143.667 443.012C143.519 444.113 143.271 445.228 142.913 446.348L143.865 446.653ZM144.281 435.993C143.703 433.628 142.688 431.422 141.331 429.467L140.509 430.037C141.799 431.895 142.762 433.989 143.31 436.23L144.281 435.993ZM136.268 424.404C134.313 423.047 132.106 422.032 129.742 421.454L129.505 422.425C131.746 422.974 133.84 423.936 135.698 425.226L136.268 424.404ZM122.59 421.078C121.431 421.233 120.258 421.495 119.082 421.871L119.387 422.823C120.507 422.465 121.622 422.216 122.723 422.069L122.59 421.078ZM119.043 421.885L115.585 423.314L115.967 424.238L119.425 422.809L119.043 421.885ZM108.668 426.173L101.752 429.032L102.134 429.956L109.05 427.097L108.668 426.173ZM94.8351 431.891L87.9184 434.75L88.3004 435.674L95.2171 432.815L94.8351 431.891ZM81.0017 437.608L77.5434 439.038L77.9254 439.962L81.3837 438.533L81.0017 437.608ZM77.578 439.025L74.2927 440.107L74.6055 441.057L77.8908 439.975L77.578 439.025ZM67.7222 442.271L61.1516 444.434L61.4644 445.384L68.0349 443.22L67.7222 442.271ZM54.581 446.598L51.2958 447.68L51.6085 448.63L54.8938 447.548L54.581 446.598ZM51.2958 447.68C50.1545 448.056 49.0077 448.374 47.8586 448.635L48.0804 449.61C49.2601 449.342 50.4372 449.015 51.6085 448.63L51.2958 447.68ZM40.7931 449.543C38.3948 449.62 36.0153 449.462 33.6848 449.085L33.5252 450.073C35.9183 450.459 38.3618 450.621 40.8249 450.543L40.7931 449.543ZM26.7926 447.283C24.558 446.464 22.4051 445.434 20.3654 444.208L19.8503 445.066C21.9443 446.324 24.1545 447.381 26.4487 448.222L26.7926 447.283ZM14.6364 439.974C12.8804 438.396 11.2645 436.643 9.81863 434.727L9.02054 435.33C10.5054 437.297 12.1649 439.098 13.9681 440.718L14.6364 439.974ZM6.09152 428.657C5.5738 427.598 5.10145 426.506 4.67774 425.381L3.74198 425.734C4.17681 426.888 4.66166 428.009 5.19321 429.096L6.09152 428.657ZM4.67774 425.381C4.47922 424.855 4.29272 424.324 4.11835 423.789L3.1676 424.099C3.34664 424.648 3.53814 425.193 3.74198 425.734L4.67774 425.381ZM3.21825 420.535C3.09289 419.987 2.9799 419.436 2.87938 418.882L1.89545 419.06C1.99866 419.629 2.11468 420.195 2.24339 420.758L3.21825 420.535ZM2.87938 418.882L2.70068 417.897L1.71674 418.075L1.89545 419.06L2.87938 418.882ZM2.34326 415.927L2.16455 414.942L1.18062 415.121L1.35933 416.106L2.34326 415.927ZM2.16455 414.942C1.95595 413.793 1.78304 412.643 1.64523 411.493L0.652344 411.613C0.792542 412.782 0.96843 413.951 1.18062 415.121L2.16455 414.942ZM1.2346 404.537C1.23818 402.2 1.38407 399.878 1.66705 397.583L0.674561 397.46C0.386668 399.796 0.238241 402.158 0.234601 404.536L1.2346 404.537ZM2.93638 390.731C3.49811 388.471 4.19525 386.25 5.02237 384.081L4.08801 383.725C3.24658 385.932 2.53737 388.19 1.96591 390.49L2.93638 390.731ZM7.89322 377.732C8.97522 375.678 10.1817 373.688 11.5073 371.773L10.6851 371.204C9.3366 373.152 8.10921 375.176 7.0085 377.265L7.89322 377.732ZM15.8131 366.294C17.3494 364.565 18.9963 362.922 20.7486 361.375L20.0869 360.625C18.3041 362.199 16.6286 363.871 15.0656 365.629L15.8131 366.294ZM26.2422 357.088C27.196 356.433 28.1736 355.803 29.1745 355.2L28.6586 354.343C27.6405 354.957 26.646 355.597 25.6757 356.264L26.2422 357.088ZM29.1745 355.2C29.9575 354.728 30.7509 354.276 31.5538 353.843L31.0791 352.963C30.2623 353.403 29.4552 353.864 28.6586 354.343L29.1745 355.2ZM36.4921 351.475C38.1747 350.764 39.8902 350.134 41.6326 349.585L41.3326 348.632C39.56 349.189 37.8148 349.831 36.103 350.554L36.4921 351.475ZM46.9291 348.192C47.8214 348.002 48.7189 347.833 49.621 347.685L49.4593 346.698C48.5416 346.849 47.6286 347.021 46.7208 347.214L46.9291 348.192ZM49.621 347.685L54.204 346.934L54.0423 345.948L49.4593 346.698L49.621 347.685ZM63.37 345.433L67.953 344.682L67.7914 343.696L63.2084 344.446L63.37 345.433ZM67.953 344.682C69.0823 344.497 70.2031 344.282 71.3144 344.038L71.0995 343.061C70.0059 343.302 68.9028 343.514 67.7914 343.696L67.953 344.682ZM77.9077 342.208C80.0769 341.477 82.1985 340.631 84.264 339.675L83.844 338.767C81.8112 339.708 79.7232 340.541 77.5884 341.26L77.9077 342.208ZM90.3088 336.468C92.2642 335.291 94.1545 334.009 95.9712 332.627L95.3657 331.831C93.5779 333.191 91.7175 334.453 89.793 335.612L90.3088 336.468ZM101.185 328.195C102.836 326.629 104.407 324.971 105.888 323.225L105.125 322.578C103.668 324.296 102.122 325.928 100.497 327.469L101.185 328.195ZM110.025 317.775C110.663 316.833 111.277 315.871 111.866 314.89L111.009 314.375C110.429 315.34 109.825 316.287 109.197 317.214L110.025 317.775ZM111.866 314.89C112.442 313.932 113.041 312.994 113.663 312.074L112.834 311.513C112.202 312.448 111.594 313.402 111.009 314.375L111.866 314.89ZM117.696 306.751C119.139 305.046 120.669 303.424 122.277 301.892L121.588 301.168C119.953 302.725 118.399 304.372 116.932 306.105L117.696 306.751ZM127.354 297.553C129.122 296.199 130.963 294.941 132.867 293.784L132.347 292.929C130.413 294.105 128.543 295.383 126.746 296.759L127.354 297.553ZM138.752 290.628C140.763 289.685 142.829 288.848 144.942 288.122L144.617 287.176C142.47 287.914 140.371 288.764 138.327 289.723L138.752 290.628ZM151.365 286.295C152.448 286.049 153.541 285.832 154.641 285.643L154.473 284.658C153.354 284.849 152.244 285.07 151.144 285.32L151.365 286.295ZM154.641 285.643L157.796 285.103L157.627 284.118L154.473 284.658L154.641 285.643ZM164.104 284.023L170.413 282.943L170.244 281.957L163.936 283.037L164.104 284.023ZM176.721 281.863L183.03 280.783L182.861 279.797L176.553 280.877L176.721 281.863ZM189.338 279.703L192.493 279.162L192.324 278.177L189.17 278.717L189.338 279.703ZM192.493 279.162C193.758 278.946 195.009 278.675 196.243 278.352L195.989 277.384C194.783 277.7 193.561 277.965 192.324 278.177L192.493 279.162ZM203.462 275.773C205.79 274.706 208.02 273.439 210.128 271.986L209.561 271.162C207.5 272.582 205.32 273.821 203.045 274.864L203.462 275.773ZM216.04 267.105C216.949 266.211 217.823 265.275 218.657 264.299L217.896 263.649C217.081 264.603 216.228 265.518 215.339 266.392L216.04 267.105ZM218.657 264.299C219.393 263.437 220.09 262.557 220.748 261.661L219.941 261.069C219.298 261.946 218.617 262.806 217.896 263.649L218.657 264.299ZM224.303 255.958C225.354 253.946 226.234 251.879 226.947 249.777L226 249.456C225.303 251.51 224.443 253.529 223.416 255.495L224.303 255.958ZM228.612 243.266C229 241.046 229.216 238.809 229.263 236.576L228.263 236.555C228.217 238.738 228.006 240.924 227.627 243.093L228.612 243.266ZM228.896 229.864C228.606 227.64 228.148 225.44 227.527 223.285L226.566 223.561C227.173 225.669 227.621 227.82 227.905 229.994L228.896 229.864ZM225.186 216.984C224.252 214.955 223.162 212.99 221.92 211.109L221.086 211.661C222.299 213.498 223.365 215.419 224.278 217.402L225.186 216.984ZM217.796 205.802C216.304 204.159 214.672 202.615 212.906 201.189L212.278 201.967C214.004 203.361 215.598 204.869 217.056 206.474L217.796 205.802ZM207.371 197.378C206.41 196.818 205.42 196.29 204.401 195.793L203.963 196.692C204.96 197.178 205.928 197.695 206.867 198.242L207.371 197.378ZM204.401 195.793L201.612 194.434L201.174 195.333L203.963 196.692L204.401 195.793ZM196.034 191.717L193.245 190.358L192.807 191.257L195.596 192.616L196.034 191.717ZM193.245 190.358C191.947 189.726 190.626 189.144 189.287 188.616L188.92 189.546C190.235 190.064 191.532 190.636 192.807 191.257L193.245 190.358ZM181.009 186.118C178.172 185.521 175.295 185.178 172.412 185.122L172.393 186.122C175.209 186.176 178.024 186.511 180.803 187.097L181.009 186.118ZM163.781 185.85C162.368 186.123 160.964 186.474 159.572 186.906L159.869 187.861C161.225 187.44 162.594 187.098 163.971 186.832L163.781 185.85ZM159.572 186.906C158.491 187.242 157.423 187.585 156.368 187.933L156.681 188.883C157.731 188.536 158.793 188.196 159.869 187.861L159.572 186.906ZM150.013 190.132C147.872 190.905 145.776 191.69 143.714 192.475L144.07 193.41C146.129 192.625 148.219 191.843 150.352 191.073L150.013 190.132ZM137.448 194.886C135.342 195.7 133.259 196.5 131.184 197.276L131.534 198.213C133.614 197.435 135.701 196.633 137.808 195.819L137.448 194.886ZM124.885 199.545C122.772 200.27 120.655 200.955 118.517 201.587L118.8 202.546C120.954 201.909 123.086 201.22 125.209 200.491L124.885 199.545ZM112.061 203.297C109.918 203.796 107.74 204.231 105.515 204.588L105.674 205.575C107.923 205.214 110.123 204.775 112.288 204.271L112.061 203.297ZM98.895 205.398C96.7311 205.579 94.514 205.683 92.2327 205.699L92.2398 206.699C94.547 206.683 96.7896 206.578 98.9785 206.394L98.895 205.398ZM85.5664 205.5C83.4159 205.358 81.2056 205.139 78.9277 204.835L78.7952 205.826C81.0948 206.133 83.3273 206.355 85.5005 206.498L85.5664 205.5ZM72.3315 203.747C70.2174 203.335 68.0456 202.852 65.8109 202.293L65.5683 203.263C67.8194 203.826 70.0082 204.313 72.14 204.729L72.3315 203.747ZM59.3678 200.522C58.31 200.205 57.2386 199.873 56.153 199.524L55.8469 200.476C56.9389 200.827 58.0169 201.162 59.0813 201.48L59.3678 200.522ZM56.153 199.524C55.0675 199.175 54.0068 198.8 52.9704 198.401L52.6109 199.334C53.6651 199.74 54.7436 200.121 55.8469 200.476L56.153 199.524ZM46.8298 195.61C44.8056 194.54 42.8883 193.366 41.072 192.1L40.5003 192.92C42.3495 194.209 44.3017 195.404 46.3623 196.494L46.8298 195.61ZM35.7849 187.916C34.0968 186.407 32.5126 184.81 31.0261 183.137L30.2787 183.801C31.7895 185.501 33.4006 187.126 35.1184 188.662L35.7849 187.916ZM26.8195 177.859C25.5078 176.025 24.2899 174.127 23.1591 172.179L22.2943 172.682C23.44 174.655 24.675 176.579 26.0061 178.44L26.8195 177.859ZM20.0186 166.19C19.0529 164.148 18.1687 162.069 17.3594 159.966L16.4262 160.326C17.2437 162.45 18.1376 164.552 19.1146 166.618L20.0186 166.19ZM15.1394 153.569C14.4631 151.397 13.8576 149.216 13.3161 147.04L12.3457 147.281C12.8916 149.475 13.5022 151.675 14.1847 153.866L15.1394 153.569ZM11.853 140.419C11.4143 138.163 11.0383 135.929 10.717 133.733L9.72754 133.878C10.051 136.088 10.4295 138.337 10.8714 140.61L11.853 140.419ZM9.87986 126.997C9.76239 125.855 9.65867 124.73 9.5674 123.625L8.57079 123.707C8.6626 124.819 8.76694 125.951 8.88511 127.099L9.87986 126.997ZM9.5674 123.625C9.47918 122.557 9.43162 121.494 9.42328 120.438L8.42331 120.446C8.43185 121.527 8.48053 122.614 8.57079 123.707L9.5674 123.625ZM9.8485 114.077C10.149 111.961 10.6043 109.88 11.2023 107.844L10.2428 107.562C9.63162 109.644 9.16586 111.771 8.85844 113.936L9.8485 114.077ZM13.4186 101.858C14.2882 99.9217 15.2876 98.0366 16.4046 96.2109L15.5516 95.689C14.4132 97.5495 13.3939 99.4721 12.5063 101.448L13.4186 101.858ZM20.0603 90.9659C21.3729 89.2984 22.7869 87.696 24.2907 86.1664L23.5776 85.4653C22.0488 87.0204 20.6104 88.6503 19.2745 90.3473L20.0603 90.9659ZM29.0114 81.8432C29.8332 81.1651 30.674 80.5065 31.5323 79.8682L30.9356 79.0658C30.0639 79.714 29.2099 80.383 28.3749 81.0719L29.0114 81.8432ZM31.5323 79.8682C32.4266 79.2033 33.3366 78.5636 34.2613 77.9497L33.7082 77.1166C32.7687 77.7403 31.8442 78.3902 30.9356 79.0658L31.5323 79.8682ZM40.0057 74.5621C41.9821 73.5343 44.0093 72.6142 46.0781 71.8047L45.7137 70.8735C43.6119 71.6959 41.5524 72.6307 39.5444 73.6749L40.0057 74.5621ZM52.4092 69.7088C54.5524 69.1239 56.7281 68.6527 58.9274 68.2981L58.7682 67.3109C56.5338 67.6711 54.3233 68.1499 52.1459 68.7441L52.4092 69.7088ZM65.5584 67.5888C66.6668 67.5297 67.7788 67.5 68.8932 67.5V66.5C67.761 66.5 66.6313 66.5302 65.5052 66.5903L65.5584 67.5888ZM68.8932 67.5H72.5355V66.5H68.8932V67.5ZM79.8202 67.5H87.1049V66.5H79.8202V67.5ZM94.3896 67.5H98.0319V66.5H94.3896V67.5ZM98.0319 67.5C99.1904 67.5 100.347 67.474 101.501 67.4222L101.456 66.4232C100.317 66.4743 99.1754 66.5 98.0319 66.5V67.5ZM108.412 66.8003C110.707 66.4894 112.985 66.0758 115.239 65.5615L115.016 64.5865C112.791 65.0942 110.543 65.5025 108.277 65.8093L108.412 66.8003ZM121.927 63.7158C124.126 63.0015 126.293 62.1883 128.423 61.278L128.03 60.3585C125.928 61.257 123.788 62.0597 121.618 62.7647L121.927 63.7158ZM134.674 58.2679C135.692 57.7205 136.698 57.1496 137.693 56.5554L137.18 55.697C136.198 56.2834 135.205 56.8469 134.201 57.3873L134.674 58.2679ZM137.693 56.5554C138.782 55.9049 139.884 55.2828 141 54.6893L140.531 53.8064C139.4 54.4077 138.283 55.0379 137.18 55.697L137.693 56.5554ZM147.873 51.4621C150.219 50.4999 152.609 49.6564 155.033 48.9337L154.747 47.9754C152.292 48.7075 149.871 49.5621 147.494 50.5369L147.873 51.4621ZM162.409 47.1291C164.892 46.6508 167.402 46.2957 169.927 46.0661L169.836 45.0702C167.278 45.3028 164.736 45.6626 162.219 46.1471L162.409 47.1291ZM177.513 45.7553C178.777 45.7665 180.043 45.809 181.309 45.8833L181.368 44.885C180.085 44.8098 178.803 44.7667 177.522 44.7554L177.513 45.7553ZM181.309 45.8833L184.613 46.077L184.671 45.0787L181.368 44.885L181.309 45.8833ZM191.22 46.4645L197.828 46.8519L197.886 45.8537L191.279 45.4662L191.22 46.4645ZM204.435 47.2394L211.042 47.6269L211.101 46.6286L204.494 46.2411L204.435 47.2394ZM217.65 48.0143L224.257 48.4018L224.316 47.4035L217.708 47.016L217.65 48.0143ZM230.865 48.7892L234.169 48.983L234.227 47.9847L230.923 47.791L230.865 48.7892ZM234.169 48.983C235.613 49.0677 237.053 49.0232 238.473 48.8544L238.355 47.8614C236.993 48.0233 235.612 48.0659 234.227 47.9847L234.169 48.983ZM246.68 46.3586C247.953 45.7084 249.174 44.9437 250.327 44.0692L249.723 43.2725C248.617 44.1111 247.446 44.8445 246.225 45.468L246.68 46.3586ZM250.327 44.0692C251.229 43.3849 252.066 42.6581 252.838 41.8946L252.135 41.1834C251.394 41.916 250.59 42.6143 249.723 43.2725L250.327 44.0692ZM256.872 36.6338C257.984 34.6707 258.79 32.593 259.302 30.465L258.329 30.2311C257.839 32.2708 257.066 34.2611 256.002 36.1412L256.872 36.6338ZM259.962 23.8703C259.885 21.6548 259.511 19.4543 258.852 17.3375L257.897 17.6346C258.53 19.6664 258.889 21.7787 258.963 23.9053L259.962 23.8703ZM256.05 11.3313C254.864 9.49191 253.417 7.79711 251.72 6.31124L251.061 7.06365C252.686 8.48666 254.073 10.1102 255.21 11.8733L256.05 11.3313ZM246.174 2.6783C245.193 2.21284 244.163 1.80323 243.085 1.45529L242.778 2.4069C243.814 2.74156 244.804 3.13514 245.746 3.5818L246.174 2.6783ZM243.085 1.45529L241.977 1.09751L241.67 2.04913L242.778 2.4069L243.085 1.45529ZM239.762 0.381967L238.654 0.0241924L238.346 0.975808L239.454 1.33358L239.762 0.381967Z"
+              fill="#2A3B52"
+            />
+          </svg>
+
+          <svg
+            class="timing__svg1"
+            width="110"
+            height="225"
+            viewBox="0 0 110 225"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M40 224.5V224.5C40 204.173 32.7286 184.517 19.5001 169.083L12.8493 161.324C10.9535 159.112 9.25753 156.737 7.78131 154.226V154.226C-8.2034 127.033 5.11671 92.0318 35.1359 82.3465L92 64V64C117.103 51.8074 114.336 15.1849 87.6867 6.9016L68.6192 0.974958"
+              stroke="#2A3B52"
+              stroke-linecap="round"
+              stroke-dasharray="7 7"
+            />
+          </svg>
+
+          <svg
+            class="timing__svg3"
+            width="35"
+            height="33"
+            viewBox="0 0 35 33"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M33.6296 22.4539L27.857 1.01066L5.91207 8.8621C2.94746 9.92278 1.03185 12.8052 1.20179 15.9497C1.45822 20.6943 6.20083 23.8616 10.6807 22.2802L18.2536 19.607L19.2162 25.5518C20.0045 30.4201 25.2526 33.1616 29.6977 31.027C32.901 29.4887 34.5534 25.8858 33.6296 22.4539Z"
+              stroke="#2A3B52"
+              stroke-dasharray="7 7"
+            />
+          </svg>
+
+          <h3 class="timing__title fade-in-element">Timing</h3>
+          <div class="timing__wrap timing__wrap-car">
+            <div class="timing__img">
+              <img class="timing__png" src="./img/car_1058364.png" />
+            </div>
+            <div class="timing__textwrap timing__textwrap-car">
+              <p class="timing__text timing__text-top">11.30</p>
+              <p class="timing__text timing__text-bottom">
+                Трансфер из г.Бреста (сбор на ул.Махновича)
+              </p>
+            </div>
+          </div>
+          <div class="timing__wrap timing__wrap-plane">
+            <div class="timing__textwrap timing__textwrap-plane">
+              <p class="timing__text timing__text-top">13.45</p>
+              <p class="timing__text timing__text-bottom">
+                Трансфер из г.Пинска (сбор на ост. КВТ)
+              </p>
+            </div>
+            <div class="timing__img">
+              <img class="timing__png" src="./img/honeymoon_1058369.png" />
+            </div>
+          </div>
+          <div class="timing__wrap timing__wrap-glasses">
+            <div class="timing__img timing__img-glasses">
+              <img class="timing__png" src="./img/glasses_1058378.png" />
+            </div>
+            <div class="timing__textwrap timing__textwrap-glasses">
+              <p class="timing__text timing__text-top">14.30</p>
+              <p class="timing__text timing__text-bottom">
+                Сбор гостей в банкетном зале
+              </p>
+            </div>
+          </div>
+          <div class="timing__wrap timing__wrap-couple">
+            <div class="timing__textwrap timing__textwrap-couple">
+              <p class="timing__text timing__text-top">15.00</p>
+              <p class="timing__text timing__text-bottom">
+                Выездная регистрация
+              </p>
+            </div>
+            <div class="timing__img timing__img-couple">
+              <img class="timing__png" src="./img/couple_1058349.png" />
+            </div>
+          </div>
+          <div class="timing__wrap timing__wrap-dinner">
+            <div class="timing__img timing__img-dinner">
+              <img class="timing__png" src="./img/dinner_1058387.png" />
+            </div>
+            <div class="timing__textwrap timing__textwrap-dinner">
+              <p class="timing__text timing__text-top">16.00</p>
+              <p class="timing__text timing__text-bottom">Банкет</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="location">
+        <div class="location__banner">
+          <div class="container">
+            <h3 class="location__title">Location</h3>
+            <div class="location__textwrap">
+              <p class="location__text location__text-top">
+                Банкетный зал “Облака”
+              </p>
+              <p class="location__text location__text-bottom">
+                Пинский район, д. Жабчцицы
+              </p>
+            </div>
+            <a
+              class="location__link"
+              href="https://yandex.by/maps/org/shater_oblaka/27705245771/?ll=25.982864%2C52.131938&z=15"
+              >Посмотреть на карте</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <div class="container">
+          <h3 class="details__title">Details</h3>
+          <div class="details__textwrap">
+            <p class="details__text">
+              Будем ждать вас в самых блистательных нарядах, в любой цветовой
+              гамме, одевайтесь как на красную дорожку!
+            </p>
+            <p class="details__text">
+              Будем благодарны, если вы воздержитесь от криков «Горько!» на
+              празднике. Для нас поцелуй - знак выражения чувств, он не может
+              быть по заказу.
+            </p>
+            <p class="details__text details__text-bottom">
+              Если вы захотите подарить нам букет, то предлагаем не мучить цветы
+              долгой дорогой и заменить их бутылочкой любого приятного напитка.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <div class="container">
+          <h3 class="form__title">Form</h3>
+          <div class="form__textwrap">
+            <p class="form__text">Просьба заполнить анкету до 10 февраля</p>
+          </div>
+          <form class="form__wrap" id="myForm" method="post">
+            <div class="form__name">
+              <p class="form__text form__text-subtitle">Ваше Имя и Фамилия:</p>
+
+              <input
+                class="form__input"
+                type="text"
+                name="name"
+                id="messageInput"
+                placeholder="Введите свое Имя и Фамилию"
+              />
+              <p class="form__text form__text-mini">
+                Если вы будете в компании своего спутника/спутницы, просим
+                дополнительно внести его/ее данные в графу.
+              </p>
+            </div>
+            <div class="form__yes">
+              <p class="form__text form__text-subtitle">
+                Планируете ли Вы присутствовать на свадьбе?
+              </p>
+              <div class="checkboxes__row">
+                <div class="checkboxes__item">
+                  <label class="checkbox style-d" for="contactChoice1">
+                    <input
+                      type="radio"
+                      id="contactChoice1"
+                      name="contact"
+                      value="Да!"
+                    />
+                    <div class="checkbox__checkmark"></div>
+                    <p class="checkbox__body">Да!</p>
+                  </label>
+                </div>
+                <div class="checkboxes__item">
+                  <label class="checkbox style-d" for="contactChoice2">
+                    <input
+                      type="radio"
+                      id="contactChoice2"
+                      name="contact"
+                      value="Нет("
+                    />
+                    <div class="checkbox__checkmark"></div>
+                    <p class="checkbox__body">Нет(</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div id="Error"></div>
+            <button class="form__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+      <div class="contacts">
+        <div class="container">
+          <p class="contacts__title">
+            Если у Вас остались вопросы, можете с нами связаться:
+          </p>
+          <div class="contacts__wrap">
+            <div class="contacts__linkwrap">
+              <p class="contacts__text">Жених:</p>
+              <a class="contacts__link" href="tel:+375444804802"
+                >+375293645020</a
+              >
+            </div>
+            <div class="contacts__linkwrap contacts__linkwrap-bottom">
+              <p class="contacts__text">Невеста:</p>
+              <a class="contacts__link" href="tel:+375444804802"
+                >+375297938079</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <h3 class="footer__title">With Love</h3>
+          <div class="footer__textwrap">
+            <p class="footer__text">Сергей и Екатерина</p>
+            <p class="footer__text footer__text-bottom">24.02.2024</p>
+          </div>
+        </div>
+      </div>
+      <div class="preloader">
+        <div class="preloader__loader">
+          <div class="loading loading01">
+            <p class="loading011 loading011__c">С</p>
+            <p class="loading011 loading011__e">Е</p>
+          </div>
+          <div class="loading loading01">
+            <p class="loading011 loading011__data">24.</p>
+            <p class="loading011 loading011__data">02.</p>
+            <p class="loading011 loading011__data">24</p>
+          </div>
+        </div>
+      </div>
+      <div class="background">
+        <div class="background__wrap background__wrap-one">
+          <img class="background__img" src="./img/2 2.png" alt="foto" />
+        </div>
+        <div class="background__wrap background__wrap-two">
+          <img class="background__img" src="./img/2.png" alt="foto" />
+        </div>
+        <div class="background__wrap background__wrap-three">
+          <img class="background__img" src="./img/3 2.png" alt="foto" />
+        </div>
+        <div class="background__wrap background__wrap-four">
+          <img class="background__img" src="./img/1.png" alt="foto">
+        </div>
+        <div class="background__wrap background__wrap-four1">
+          <img class="background__img" src="./img/2.png" alt="foto">
+        </div>
+        <div class="background__wrap background__wrap-five">
+          <img class="background__img" src="./img/2 2.png" alt="foto" />
+        </div>
+        <div class="background__wrap background__wrap-six">
+          <img class="background__img" src="./img/4 2.png" alt="foto" />
+        </div>
+        <div class="background__wrap background__wrap-seven">
+          <img class="background__img" src="./img/4.png" alt="foto" />
+        </div>
+        <div class="background__wrap background__wrap-eight">
+          <img class="background__img" src="./img/3.png" alt="foto" />
+        </div>
+        <div class="background__wrap background__wrap-nine">
+          <img class="background__img" src="./img/2.png" alt="foto" />
+        </div>
+        <div class="background__wrap background__wrap-ten">
+          <img class="background__img" src="./img/5.png" alt="foto" />
+        </div>
+        <div class="background__wrap background__wrap-eleven">
+          <img class="background__img" src="./img/4.png" alt="foto" />
+        </div>
+        <div class="background__wrap background__wrap-twelve">
+          <img class="background__img" src="./img/1.png" alt="foto" />
+        </div>
+      </div>
+    </main>
+
+
+
+
+
+
+    <script>
+      // Задаем конечную дату для обратного отсчета (год, месяц (отсчет начинается с 0), день, час, минута, секунда)
+      const containerSection = document.getElementById("countdown");
+      const createElement = (tagName, className, text) => {
+        const element = document.createElement(tagName);
+        element.classList.add(className);
+        if (text) {
+          element.textContent = text;
+        }
+        return element;
+      };
+      const timerDiv = createElement("div", "timer__wrap");
+      const daysDiv = createElement("div", "timer__days");
+      const hoursDiv = createElement("div", "timer__hours");
+      const minutesDiv = createElement("div", "timer__minutes");
+      const secondsDiv = createElement("div", "timer__seconds");
+      const daysNum = createElement("h3", "timer__number", "0");
+      const hoursNum = createElement("h3", "timer__number", "0");
+      const minutesNum = createElement("h3", "timer__number", "0");
+      const secondsNum = createElement("h3", "timer__number", "0");
+      const daysText = createElement("h3", "timer__text", "дней");
+      const hoursText = createElement("h3", "timer__text", "часов");
+      const minutesText = createElement("h3", "timer__text", "минут");
+      const secondsText = createElement("h3", "timer__text", "секунд");
+      daysDiv.append(daysNum, daysText);
+      hoursDiv.append(hoursNum, hoursText);
+      minutesDiv.append(minutesNum, minutesText);
+      secondsDiv.append(secondsNum, secondsText);
+      timerDiv.append(daysDiv, hoursDiv, minutesDiv, secondsDiv);
+      containerSection.append(timerDiv);
+      // Задаем конечную дату для обратного отсчета
+      const countdownDate = new Date("2024-02-24T14:30:00").getTime();
+      // Обновляем счетчик каждую секунду
+      const x = setInterval(function () {
+        const now = new Date().getTime(); // текущее время
+        const distance = countdownDate - now; // разница между текущим временем и целевым временем
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Обновляем значения в созданных элементах
+        daysNum.textContent = days;
+        hoursNum.textContent = hours;
+        minutesNum.textContent = minutes;
+        secondsNum.textContent = seconds;
+        // Если обратный отсчет закончился, выведем сообщение
+        if (distance < 0) {
+          clearInterval(x);
+          containerSection.innerHTML = `
+        <div class="timer__wrap">
+        <div class="timer__days">
+        <h3 class="timer__number">0</h3>
+        <h3 class="timer__text">дней</h3>
+    </div>
+    <div class="timer__hours">
+    <h3 class="timer__number">0</h3>
+    <h3 class="timer__text">часов</h3>
+    </div>
+    <div class="timer__minutes">
+    <h3 class="timer__number">0</h3>
+    <h3 class="timer__text">минут</h3>
+    </div>
+    <div class="timer__seconds">
+    <h3 class="timer__number">0</h3>
+    <h3 class="timer__text">секунд</h3>
+    </div>
+    </div>
+        `;
+        }
+      }, 1000);
+    </script>
+      <script>
+const container = document.getElementById('container');
+const totalHearts = 15;
+const countdownDuration = 3; // Длительность обратного отсчета в секундах
+
+function createHeart() {
+  const heart = document.createElement('div');
+  heart.classList.add('heart');
+  container.appendChild(heart);
+
+  const x = Math.random() * window.innerWidth;
+  const y = Math.random() * window.innerHeight;
+
+  heart.style.left = x + 'px';
+  heart.style.top = y + 'px';
+
+  setTimeout(() => {
+    heart.style.animation = 'explode 1s ease-out';
+    heart.style.opacity = '0';
+
+    setTimeout(() => {
+      heart.remove();
+    }, 1000); // Удалить сердечко после завершения анимации
+  }, countdownDuration * 1000); // Запустить анимацию после обратного отсчета
+}
+
+for (let i = 0; i < totalHearts; i++) {
+  setTimeout(createHeart, Math.random() * countdownDuration * 1000); // Создать сердце с задержкой
+}
+
+
+//      const container = document.getElementById('container');
+// const totalHearts = 15;
+// const countdownDuration = 3; // Длительность обратного отсчета в секундах
+
+// function createHeart() {
+//   const heart = document.createElement('div');
+//   heart.classList.add('heart');
+//   container.appendChild(heart);
+
+//   setTimeout(() => {
+//     heart.style.animation = 'explode 1s ease-out';
+//     heart.style.opacity = '0';
+
+//     setTimeout(() => {
+//       heart.remove();
+//     }, 1000); // Удалить сердечко после завершения анимации
+//   }, countdownDuration * 1000); // Запустить анимацию после обратного отсчета
+// }
+
+// for (let i = 0; i < totalHearts; i++) {
+//   setTimeout(createHeart, Math.random() * countdownDuration * 1000); // Создать сердечко со случайной задержкой
+// }
+
+    // const heartsContainer = document.getElementById('hearts');
+    // const containerWidth = heartsContainer.offsetWidth;
+    // const containerHeight = heartsContainer.offsetHeight;
+    // const totalHearts = 20;
+    // const heartSize = 30;
+    // const rows = Math.floor(containerHeight / heartSize);
+    // const columns = Math.floor(containerWidth / heartSize);
+    // const rowSpacing = containerHeight / rows;
+    // const columnSpacing = containerWidth / columns;
+    // for (let row = 0; row < rows; row++) {
+    //   for (let col = 0; col < columns; col++) {
+    //     const heart = document.createElement('div');
+    //     heart.classList.add('heart');
+    //     const x = col * columnSpacing + (columnSpacing - heartSize) / 2;
+    //     const y = row * rowSpacing + (rowSpacing - heartSize) / 2;
+    //     heart.style.left = `${x}px`;
+    //     heart.style.top = `${y}px`;
+    //     heartsContainer.appendChild(heart);
+    //   }
+    // }
+  </script>
+
+    <script>
+      const successMessage = document.createElement("div");
+      const errorMessage = document.createElement("div");
+
+      function showSuccessMessage() {
+        successMessage.classList.add("message");
+        successMessage.innerHTML = `
+          <div class="message__wrap">
+            <p class="close__button">&times;</p>
+            <div class="message__content" id="message">
+            <p class="message__text">Анкета успешно отправлена</p>
+                 <div class="message__img">
+                    <svg class="message__png" width="38" height="33" viewBox="0 0 38 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 17.5L13.5 29L36 2" stroke="#FBFBFB" stroke-width="5"/>
+      </svg>
+      </div>
+                  </div>
+
+          </div>
+        `;
+
+        document.body.appendChild(successMessage);
+
+        setTimeout(function () {
+          successMessage.remove();
+        }, 5000);
+
+        const closeButton = successMessage.querySelector(".close__button");
+        closeButton.addEventListener("click", function () {
+          successMessage.remove();
+        });
+
+        const div = document.getElementById("message");
+
+        document.addEventListener("click", (e) => {
+          const withinBoundaries = e.composedPath().includes(div);
+
+          if (!withinBoundaries) {
+            successMessage.remove();
+          }
+        });
+      }
+
+      function showErrorMessage() {
+        errorMessage.classList.add("message");
+        errorMessage.innerHTML = `
+          <div class="message__wrap">
+            <p class="close__button">&times;</p>
+            <div class="message__content" id="message">
+            <p class="message__text">Произошла ошибка при отправке анкеты</p>
+                 <div class="message__img">
+                    <svg class="message__png" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M31.9749 2L17.6005 17.6005M3.2261 33.201L17.6005 17.6005M17.6005 17.6005L33.201 31.9749L2 3.2261" stroke="#FBFBFB" stroke-width="5"
+      </svg>
+      </div>
+                  </div>
+          </div>
+        `;
+
+        document.body.appendChild(errorMessage);
+
+        setTimeout(function () {
+          errorMessage.remove();
+        }, 5000);
+
+        const closeButton = errorMessage.querySelector(".close__button");
+        closeButton.addEventListener("click", function () {
+          errorMessage.remove();
+        });
+        const div = document.getElementById("message");
+
+        document.addEventListener("click", (e) => {
+          const withinBoundaries = e.composedPath().includes(div);
+
+          if (!withinBoundaries) {
+            errorMessage.remove();
+          }
+        });
+      }
+
+      const TOKEN = "6925760516:AAHornVvv14WNmUZoijiyq2EAGBLMdXNKYw"; // токен от BotFather
+      const CHAT_ID = "-1002046395042"; // chat_id для телеграм
+
+      const form = document.getElementById("myForm"); // находим в DOM нашу лид-форму
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // перехватываем стандартный ответ
+        data = new FormData(this);
+        const nameInput = data.get("name");
+        const radioValue = document.querySelector(
+          'input[name="contact"]:checked'
+        );
+
+        const errorMessageBox = document.querySelector(".error-message");
+        if (!nameInput || !radioValue) {
+          if (!errorMessageBox) {
+            const errorMessage = document.createElement("div");
+            errorMessage.classList.add("error-message");
+            errorMessage.innerHTML = "<p>Заполните все поля</p>";
+            document.getElementById("Error").appendChild(errorMessage);
+          }
+        } else {
+          if (errorMessageBox) {
+            errorMessageBox.remove();
+          }
+          sendMsg(data);
+          form.reset();
+        }
+      });
+
+      function sendMsg(data) {
+        const url = "https://api.telegram.org/bot" + TOKEN + "/sendMessage"; // токен бота
+        const radioValue = document.querySelector(
+          'input[name="contact"]:checked'
+        ).value;
+
+        const body = {
+          chat_id: CHAT_ID,
+          parse_mode: "Markdown",
+          text: `*Данные гостя:*\n${data.get(
+            "name"
+          )}\n*Присутствие на свадьбе:*\n${radioValue}`,
+        };
+
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
+        xhr.send(JSON.stringify(body));
+
+        xhr.onload = function () {
+          if (xhr.status >= 200 && xhr.status < 300) {
+            const responseData = JSON.parse(xhr.responseText);
+            console.log("Сообщение отправлено в телеграм:", responseData);
+            showSuccessMessage();
+          } else {
+            console.error(
+              "Ошибка отправки сообщения в телеграм:",
+              xhr.statusText
+            );
+            showErrorMessage();
+          }
+        };
+
+        xhr.onerror = function () {
+          console.error(
+            "Ошибка отправки сообщения в телеграм:",
+            xhr.statusText
+          );
+          showErrorMessage();
+        };
+      }
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("load", function () {
+          var preloader = document.querySelector(".preloader");
+          var loader = preloader.querySelector(".preloader__loader");
+          loader.style.display = "none";
+          setTimeout(function () {
+            preloader.style.display = "none";
+          }, 200);
+        });
+      });
+    </script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
