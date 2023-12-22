@@ -23,9 +23,9 @@ body {
   background-color: #fbfbfb;
   position: relative;
 }
-html, body {
+.wrapper {
+  position: relative;
       overflow: hidden;
-      height: 100%;
 }
 .container {
   max-width: 320px;
