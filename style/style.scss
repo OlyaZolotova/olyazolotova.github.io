@@ -24,7 +24,8 @@ body {
   position: relative;
 }
 html, body {
-      overflow-x: hidden;
+      overflow: hidden;
+      height: 100%;
 }
 .container {
   max-width: 320px;
