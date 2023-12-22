@@ -12,7 +12,11 @@
 body {
   background-color: #fbfbfb;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.wrapper {
+  overflow: hidden;
 }
 
 .container {
