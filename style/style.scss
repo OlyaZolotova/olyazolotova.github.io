@@ -15,15 +15,25 @@
 }
 
 @font-face {
-font-family: Aquarelle;
-src: url(../img/Aquarelle.ttf);
+  font-family: Aquarelle;
+  src: url(../img/Aquarelle.ttf);
 }
+html{
 
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+     &:root {
+    --animate-duration: 2s;
+  }
+}
 
 body {
   background-color: #fbfbfb;
   position: relative;
-  overflow-x: hidden;
+  width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .container {
   max-width: 320px;
@@ -43,8 +53,8 @@ body {
 }
 
 .main {
-  margin-bottom: 120px;
-  padding: 65px 0 0;
+  margin-bottom: 140px;
+  padding: 80px 0 0;
   &__mainwrap {
     padding: 42px 0px 73px;
     position: relative;
@@ -918,26 +928,26 @@ body {
       width: 250px;
       height: 250px;
     }
-        &-four {
-        top: 1360px;
-    right: -130px;
-    transform: rotate(5deg);
-    width: 250px;
-    height: 250px;
+    &-four {
+      top: 1360px;
+      right: -130px;
+      transform: rotate(5deg);
+      width: 250px;
+      height: 250px;
     }
-        &-four1 {
-       top: 1540px;
-    left: -135px;
-    transform: rotate(50deg);
-    width: 250px;
-    height: 250px;
+    &-four1 {
+      top: 1540px;
+      left: -135px;
+      transform: rotate(50deg);
+      width: 250px;
+      height: 250px;
     }
-        &-five {
+    &-five {
       top: 1680px;
-    right: -80px;
-    transform: rotate(-40deg);
-    width: 200px;
-    height: 250px;
+      right: -80px;
+      transform: rotate(-40deg);
+      width: 200px;
+      height: 250px;
     }
     &-six {
       top: 1805px;
@@ -987,7 +997,7 @@ body {
       transform: rotate(30deg);
       width: 200px;
       height: 200px;
-       z-index: -2;
+      z-index: -2;
     }
   }
   &__img {
@@ -1008,25 +1018,16 @@ body {
   }
 }
 
-html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  &:root {
---animate-duration: 2s;
-  }
-}
-
 .heart {
   position: absolute;
   font-size: 30px;
-  color:#b3c4db;
+  color: #b3c4db;
   animation: explode 1s ease-out;
   opacity: 0;
 }
 
 .heart:before {
-  content: '\2665';
+  content: "\2665";
 }
 
 // .timer__hearts {
@@ -1036,4 +1037,3 @@ html {
 //   height: 30px;
 //   top: 0;
 // }
-
