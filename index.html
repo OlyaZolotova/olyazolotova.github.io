@@ -24,12 +24,84 @@
     <script>
       new WOW().init();
     </script>
+    <style>
+      .preloader {
+        background-color: #fbfbfb;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+      }
 
+      .preloader__loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 320px;
+        width: 100%;
+      }
+      /* common */
+      .loading {
+        font-family: "Aquarelle";
+        font-weight: 300;
+        font-size: 84px;
+        line-height: 84px;
+        color: #2a3b52;
+        text-align: center;
+      }
+
+      /* code #1 */
+      .loading01 {
+        display: flex;
+        justify-content: center;
+      }
+      .loading011 {
+        animation: loading01 1.4s infinite alternate;
+      }
+      @keyframes loading01 {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      .loading011__c {
+        margin: 0px -20px 0 0px;
+      }
+      .loading011__e {
+        margin: 30px 0px 0px 12px;
+      }
+      .loading011__data {
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 300;
+        color: #2a3b52;
+        text-align: center;
+      }
+    </style>
     <title>Wedding day</title>
   </head>
 
   <body>
     <main id="container">
+      <div class="preloader">
+        <div class="preloader__loader">
+          <div class="loading loading01">
+            <p class="loading011 loading011__c">С</p>
+            <p class="loading011 loading011__e">Е</p>
+          </div>
+          <div class="loading loading01">
+            <p class="loading011 loading011__data">24.</p>
+            <p class="loading011 loading011__data">02.</p>
+            <p class="loading011 loading011__data">24</p>
+          </div>
+        </div>
+      </div>
       <div class="main wow animate__animated animate__fadeIn">
         <div class="container__main">
           <div class="main__mainwrap">
@@ -57,8 +129,8 @@
             </p>
             <p class="information__text">
               Позвольте пригласить Вас-разделить с нами радость этого
-              дня. Подарите свою поддержку и добрые пожелания,а мы в свою
-              очередь поделимся частичкой нашего счастья.
+              дня.Подарите свою поддержку и добрые пожелания,а мы в свою очередь
+              поделимся частичкой нашего счастья.
             </p>
           </div>
         </div>
@@ -335,19 +407,6 @@
           </div>
         </div>
       </div>
-      <div class="preloader">
-        <div class="preloader__loader">
-          <div class="loading loading01">
-            <p class="loading011 loading011__c">С</p>
-            <p class="loading011 loading011__e">Е</p>
-          </div>
-          <div class="loading loading01">
-            <p class="loading011 loading011__data">24.</p>
-            <p class="loading011 loading011__data">02.</p>
-            <p class="loading011 loading011__data">24</p>
-          </div>
-        </div>
-      </div>
       <div class="background">
         <div
           class="background__wrap background__wrap-one wow animate__animated animate__fadeIn"
@@ -571,16 +630,15 @@
       <p class="close__button">&times;</p>
 
                   </div>
-                  <p class="close__button">&times;</p>
                   
           </div>
         `;
 
         document.body.appendChild(successMessage);
 
-        // setTimeout(function () {
-        //   successMessage.remove();
-        // }, 5000);
+        setTimeout(function () {
+          successMessage.remove();
+        }, 5000);
 
         const closeButton = successMessage.querySelector(".close__button");
         closeButton.addEventListener("click", function () {
@@ -602,7 +660,6 @@
         errorMessage.classList.add("message");
         errorMessage.innerHTML = `
           <div class="message__wrap">
-            <p class="close__button">&times;</p>
             <div class="message__content" id="message">
             <p class="message__text">Произошла ошибка при отправке анкеты</p>
                  <div class="message__img">
@@ -610,6 +667,7 @@
       <path d="M31.9749 2L17.6005 17.6005M3.2261 33.201L17.6005 17.6005M17.6005 17.6005L33.201 31.9749L2 3.2261" stroke="#FBFBFB" stroke-width="5"
       </svg>
       </div>
+      <p class="close__button">&times;</p>
                   </div>
           </div>
         `;

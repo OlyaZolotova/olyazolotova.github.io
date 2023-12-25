@@ -18,12 +18,11 @@
   font-family: Aquarelle;
   src: url(../img/Aquarelle.ttf);
 }
-html{
-
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-     &:root {
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  &:root {
     --animate-duration: 2s;
   }
 }
@@ -32,8 +31,8 @@ body {
   background-color: #fbfbfb;
   position: relative;
   width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .container {
   max-width: 320px;
@@ -767,70 +766,70 @@ body {
   }
 }
 
-.preloader {
-  background-color: #fbfbfb;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
+// .preloader {
+//   background-color: #fbfbfb;
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   z-index: 1000;
 
-  &__loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 320px;
-    width: 100%;
-  }
-  /* common */
-  .loading {
-    font-family: "Aquarelle";
-    font-weight: 300;
-    font-size: 84px;
-    line-height: 84px;
-    color: #2a3b52;
-    text-align: center;
-  }
+//   &__loader {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     max-width: 320px;
+//     width: 100%;
+//   }
+//   /* common */
+//   .loading {
+//     font-family: "Aquarelle";
+//     font-weight: 300;
+//     font-size: 84px;
+//     line-height: 84px;
+//     color: #2a3b52;
+//     text-align: center;
+//   }
 
-  /* code #1 */
-  .loading01 {
-    display: flex;
-    justify-content: center;
-    // margin-bottom: 15px;
-    .loading011 {
-      animation: loading01 1.4s infinite alternate;
-      @for $i from 0 through 6 {
-        &:nth-child(#{$i + 1}) {
-          animation-delay: #{$i * 0.1}s;
-        }
-      }
-    }
-  }
-  @keyframes loading01 {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  .loading011__c {
-    margin: 0px -20px 0 0px;
-  }
-  .loading011__e {
-    margin: 30px 0px 0px 12px;
-  }
-  .loading011__data {
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    line-height: 25px;
-    font-weight: 300;
-    color: #2a3b52;
-    text-align: center;
-  }
-}
+//   /* code #1 */
+//   .loading01 {
+//     display: flex;
+//     justify-content: center;
+//     // margin-bottom: 15px;
+//     .loading011 {
+//       animation: loading01 1.4s infinite alternate;
+//       @for $i from 0 through 6 {
+//         &:nth-child(#{$i + 1}) {
+//           animation-delay: #{$i * 0.1}s;
+//         }
+//       }
+//     }
+//   }
+//   @keyframes loading01 {
+//     0% {
+//       opacity: 1;
+//     }
+//     100% {
+//       opacity: 0;
+//     }
+//   }
+//   .loading011__c {
+//     margin: 0px -20px 0 0px;
+//   }
+//   .loading011__e {
+//     margin: 30px 0px 0px 12px;
+//   }
+//   .loading011__data {
+//     font-family: "Open Sans", sans-serif;
+//     font-size: 20px;
+//     line-height: 25px;
+//     font-weight: 300;
+//     color: #2a3b52;
+//     text-align: center;
+//   }
+// }
 .message {
   width: 100%;
   height: 100%;
@@ -846,6 +845,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+        padding: 50px;
+    border: 1px solid rgb(42, 59, 82, 0.7);
+    border-radius: 10px;
   }
   &__text {
     font-family: "Open Sans", sans-serif;
@@ -878,8 +880,8 @@ body {
     font-weight: 400;
     color: #2a3b52;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: 15px;
     cursor: pointer;
     text-decoration: none;
     &:hover {
@@ -1029,11 +1031,3 @@ body {
 .heart:before {
   content: "\2665";
 }
-
-// .timer__hearts {
-//   position: absolute;
-//   max-width: 280px;
-//   width: 100%;
-//   height: 30px;
-//   top: 0;
-// }
