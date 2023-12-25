@@ -12,11 +12,7 @@
 body {
   background-color: #fbfbfb;
   position: relative;
-  overflow: hidden;
-}
-
-.wrapper {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -176,7 +172,7 @@ body {
   background-position: center;
   padding: 30px 0;
   position: relative;
-  z-index: 1;
+  z-index: 4;
 }
 .location__banner::before {
   content: "";
@@ -188,7 +184,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 5;
 }
 .location__banner::after {
   content: "";
@@ -200,7 +196,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 6;
 }
 .location__title {
   font-weight: 400;
@@ -770,11 +766,13 @@ body {
   /* common */
   /* code #1 */
 }
-.preloader .preloader__loader {
+.preloader__loader {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-width: 320px;
+  width: 100%;
 }
 .preloader .loading {
   font-family: "Aquarelle";
@@ -927,7 +925,6 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  opacity: 0.2;
   z-index: 3;
 }
 .background__wrap-one {
@@ -1050,16 +1047,19 @@ body {
     opacity: 0;
   }
 }
-body, html {
+html {
   height: 100%;
   margin: 0;
   padding: 0;
 }
+html:root {
+  --animate-duration: 2s;
+}
 
 .heart {
   position: absolute;
-  font-size: 50px;
-  color: #2a3b52;
+  font-size: 30px;
+  color: #b3c4db;
   -webkit-animation: explode 1s ease-out;
           animation: explode 1s ease-out;
   opacity: 0;
