@@ -33,6 +33,16 @@ body {
   position: relative;
   z-index: 100;
 }
+@media (min-width: 768px) {
+  .container {
+    max-width: 550px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 740px;
+  }
+}
 .container__main {
   padding: 0px 0px;
   margin: 0 auto;
@@ -42,10 +52,25 @@ body {
   padding: 0px 15px;
   z-index: 1;
 }
+@media (min-width: 1024px) {
+  .container__timing {
+    max-width: 930px;
+  }
+}
+@media (min-width: 1024px) {
+  .container__details {
+    max-width: 940px;
+  }
+}
 
 .main {
   margin-bottom: 140px;
   padding: 80px 0 0;
+}
+@media (min-width: 1024px) {
+  .main {
+    padding: 40px 0 0;
+  }
 }
 .main__mainwrap {
   padding: 42px 0px 73px;
@@ -54,6 +79,12 @@ body {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 120px;
+}
+@media (min-width: 1024px) {
+  .main__mainwrap {
+    padding: 50px 0px 60px;
+    max-width: 300px;
+  }
 }
 .main__mainwrap::before {
   content: "";
@@ -66,6 +97,11 @@ body {
   border: 5px solid #b3c4db;
   filter: blur(5px);
 }
+@media (min-width: 1024px) {
+  .main__mainwrap::before {
+    height: 570px;
+  }
+}
 .main__title {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -77,6 +113,12 @@ body {
   opacity: 0.9;
   position: relative;
 }
+@media (min-width: 1024px) {
+  .main__title {
+    font-size: 140px;
+    line-height: 160px;
+  }
+}
 .main__textwrap {
   max-width: 300px;
   width: 100%;
@@ -87,12 +129,24 @@ body {
   z-index: 1;
   margin: 0 auto;
 }
+@media (min-width: 1024px) {
+  .main__textwrap {
+    max-width: 500px;
+    bottom: -105px;
+  }
+}
 .main__text {
   font-family: "Aquarelle";
   font-weight: 300;
   font-size: 42px;
   line-height: 60px;
   color: #2a3b52;
+}
+@media (min-width: 1024px) {
+  .main__text {
+    font-size: 52px;
+    line-height: 75px;
+  }
 }
 .main__text-s {
   text-align: left;
@@ -105,12 +159,23 @@ body {
   margin-bottom: 20px;
   width: 85px;
 }
+@media (min-width: 1024px) {
+  .main__text-a {
+    font-size: 80px;
+    margin-bottom: 30px;
+  }
+}
 .main__text-e {
   text-align: right;
 }
 
 .information {
   margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .information {
+    margin-bottom: 50px;
+  }
 }
 .information__title {
   font-family: "Open Sans", sans-serif;
@@ -121,6 +186,13 @@ body {
   text-align: center;
   color: #2a3b52;
 }
+@media (min-width: 1024px) {
+  .information__title {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 30px;
+  }
+}
 .information__text {
   font-family: Open Sans;
   font-weight: 300;
@@ -130,9 +202,20 @@ body {
   text-align: center;
   color: #2a3b52;
 }
+@media (min-width: 1024px) {
+  .information {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
 
 .timer {
   margin-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  .timer {
+    margin-bottom: 60px;
+  }
 }
 .timer__title {
   font-family: "Open Sans", sans-serif;
@@ -143,6 +226,13 @@ body {
   text-align: center;
   color: #2a3b52;
 }
+@media (min-width: 1024px) {
+  .timer__title {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 30px;
+  }
+}
 .timer__wrapper {
   border-radius: 50px;
   background-color: #b3c4db;
@@ -150,6 +240,13 @@ body {
   width: 100%;
   padding: 10px 42.5px;
   position: relative;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .timer__wrapper {
+    max-width: 500px;
+    padding: 12px 76.5px;
+  }
 }
 .timer__wrap {
   display: flex;
@@ -164,6 +261,12 @@ body {
   text-align: center;
   color: #2a3b52;
 }
+@media (min-width: 1024px) {
+  .timer__number {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
 .timer__text {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -172,9 +275,20 @@ body {
   text-align: center;
   color: #2a3b52;
 }
+@media (min-width: 1024px) {
+  .timer__text {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
 
 .location {
   margin-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  .location {
+    margin-bottom: 60px;
+  }
 }
 .location__banner {
   background-image: url(../img/back.jpg);
@@ -184,6 +298,11 @@ body {
   padding: 30px 0;
   position: relative;
   z-index: 4;
+}
+@media (min-width: 1024px) {
+  .location__banner {
+    padding: 45px 0;
+  }
 }
 .location__banner::before {
   content: "";
@@ -219,6 +338,13 @@ body {
   font-family: "Mr De Haviland", cursive;
   position: relative;
 }
+@media (min-width: 1024px) {
+  .location__title {
+    font-size: 84px;
+    line-height: 108px;
+    margin-bottom: 140px;
+  }
+}
 .location__title::before {
   content: "Location";
   display: block;
@@ -234,6 +360,13 @@ body {
   top: 0;
   left: 3px;
 }
+@media (min-width: 1024px) {
+  .location__title::before {
+    font-size: 84px;
+    line-height: 108px;
+    margin-bottom: 140px;
+  }
+}
 .location__text {
   font-family: Open Sans;
   font-weight: 400;
@@ -243,8 +376,14 @@ body {
   text-align: center;
   color: #fbfbfb;
 }
+@media (min-width: 1024px) {
+  .location__text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
 .location__text-bottom {
-  margin-bottom: 90px;
+  margin-bottom: 210px;
 }
 .location__link {
   font-family: Open Sans;
@@ -262,9 +401,21 @@ body {
   position: relative;
   z-index: 5;
 }
+@media (min-width: 1024px) {
+  .location__link {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 175px;
+  }
+}
 .location__link:hover {
   max-width: 160px;
   font-weight: 600;
+}
+@media (min-width: 1024px) {
+  .location__link:hover {
+    max-width: 180px;
+  }
 }
 .location__link:focus {
   max-width: 160px;
@@ -272,19 +423,36 @@ body {
   color: #2a3b52;
   border-bottom: 0.7px solid #2a3b52;
 }
+@media (min-width: 1024px) {
+  .location__link:focus {
+    max-width: 180px;
+  }
+}
 
 .timing {
   margin-bottom: 185px;
   position: relative;
 }
+@media (min-width: 1024px) {
+  .timing {
+    margin-bottom: 200px;
+    height: 1420px;
+  }
+}
 .timing__title {
   font-weight: 400;
   font-size: 64px;
-  line-height: 84x;
+  line-height: 84px;
   text-align: center;
   color: #2a3b52;
   font-family: "Mr De Haviland", cursive;
   position: relative;
+}
+@media (min-width: 1024px) {
+  .timing__title {
+    font-size: 84px;
+    line-height: 108px;
+  }
 }
 .timing__title::before {
   content: "Timing";
@@ -292,7 +460,7 @@ body {
   position: absolute;
   font-weight: 400;
   font-size: 64px;
-  line-height: 84x;
+  line-height: 84px;
   color: #2a3b52;
   font-family: "Mr De Haviland", cursive;
   opacity: 0.2;
@@ -300,6 +468,12 @@ body {
   height: 100%;
   top: 0;
   left: 3px;
+}
+@media (min-width: 1024px) {
+  .timing__title::before {
+    font-size: 84px;
+    line-height: 108px;
+  }
 }
 .timing__wrap {
   display: flex;
@@ -433,14 +607,26 @@ body {
 .details {
   margin-bottom: 40px;
 }
+@media (min-width: 1024px) {
+  .details {
+    margin-bottom: 60px;
+  }
+}
 .details__title {
   font-weight: 400;
   font-size: 64px;
-  line-height: 84x;
+  line-height: 84px;
   text-align: center;
   color: #2a3b52;
   font-family: "Mr De Haviland", cursive;
   position: relative;
+}
+@media (min-width: 1024px) {
+  .details__title {
+    font-size: 84px;
+    line-height: 108px;
+    margin-bottom: 50px;
+  }
 }
 .details__title::before {
   content: "Details";
@@ -448,7 +634,7 @@ body {
   position: absolute;
   font-weight: 400;
   font-size: 64px;
-  line-height: 84x;
+  line-height: 84px;
   color: #2a3b52;
   font-family: "Mr De Haviland", cursive;
   opacity: 0.2;
@@ -456,6 +642,21 @@ body {
   height: 100%;
   top: 0;
   left: 3px;
+}
+@media (min-width: 1024px) {
+  .details__title::before {
+    font-size: 84px;
+    line-height: 108px;
+  }
+}
+@media (min-width: 1024px) {
+  .details__textwrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
 }
 .details__text {
   font-family: Open Sans;
@@ -467,6 +668,15 @@ body {
   text-indent: 25px;
   color: #2a3b52;
   position: relative;
+}
+@media (min-width: 1024px) {
+  .details__text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 0px;
+    text-indent: 0px;
+    text-align: center;
+  }
 }
 .details__text-bottom {
   margin-bottom: 0px;
@@ -483,9 +693,22 @@ body {
   top: 5px;
   left: 9px;
 }
+@media (min-width: 1024px) {
+  .details__text::before {
+    width: 30px;
+    height: 30px;
+    top: -45px;
+    left: 45%;
+  }
+}
 
 .contacts {
   margin-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  .contacts {
+    margin-bottom: 60px;
+  }
 }
 .contacts__title {
   font-family: Open Sans;
@@ -496,6 +719,20 @@ body {
   text-align: center;
   color: #2a3b52;
 }
+@media (min-width: 1024px) {
+  .contacts__title {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .contacts__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .contacts__text {
   font-family: Open Sans;
   font-weight: 600;
@@ -505,9 +742,20 @@ body {
   color: #2a3b52;
   position: relative;
 }
+@media (min-width: 1024px) {
+  .contacts__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 .contacts__linkwrap {
   display: flex;
   margin-bottom: 15px;
+}
+@media (min-width: 1024px) {
+  .contacts__linkwrap {
+    margin-bottom: 0px;
+  }
 }
 .contacts__linkwrap-bottom {
   margin-bottom: 0px;
@@ -524,6 +772,13 @@ body {
   border-bottom: 0.7px solid #b3c4db;
   display: block;
 }
+@media (min-width: 1024px) {
+  .contacts__link {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 125px;
+  }
+}
 .contacts__link:hover {
   border-bottom: 0.7px solid #2a3b52;
   font-weight: 400;
@@ -537,14 +792,25 @@ body {
   background-color: #b3c4db;
   padding: 10px 0;
 }
+@media (min-width: 1024px) {
+  .footer {
+    padding: 15px 0;
+  }
+}
 .footer__title {
   font-weight: 400;
   font-size: 64px;
-  line-height: 84x;
+  line-height: 84px;
   text-align: center;
   color: #2a3b52;
   font-family: "Mr De Haviland", cursive;
   position: relative;
+}
+@media (min-width: 1024px) {
+  .footer__title {
+    font-size: 84px;
+    line-height: 108px;
+  }
 }
 .footer__title::before {
   content: "With Love";
@@ -561,6 +827,12 @@ body {
   top: 0;
   left: 3px;
 }
+@media (min-width: 1024px) {
+  .footer__title::before {
+    font-size: 84px;
+    line-height: 108px;
+  }
+}
 .footer__text {
   font-family: Open Sans;
   font-weight: 300;
@@ -571,23 +843,46 @@ body {
   color: #2a3b52;
   position: relative;
 }
+@media (min-width: 1024px) {
+  .footer__text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
 .footer__text-bottom {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 0px;
 }
+@media (min-width: 1024px) {
+  .footer__text-bottom {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 
 .form {
   margin-bottom: 40px;
 }
+@media (min-width: 1024px) {
+  .form {
+    margin-bottom: 60px;
+  }
+}
 .form__title {
   font-weight: 400;
   font-size: 64px;
-  line-height: 84x;
+  line-height: 84px;
   text-align: center;
   color: #2a3b52;
   font-family: "Mr De Haviland", cursive;
   position: relative;
+}
+@media (min-width: 1024px) {
+  .form__title {
+    font-size: 84px;
+    line-height: 108px;
+  }
 }
 .form__title::before {
   content: "Form";
@@ -595,7 +890,7 @@ body {
   position: absolute;
   font-weight: 400;
   font-size: 64px;
-  line-height: 84x;
+  line-height: 84px;
   color: #2a3b52;
   font-family: "Mr De Haviland", cursive;
   opacity: 0.2;
@@ -604,10 +899,21 @@ body {
   top: 0;
   left: 3px;
 }
+@media (min-width: 1024px) {
+  .form__title::before {
+    font-size: 84px;
+    line-height: 108px;
+  }
+}
 .form__wrap {
   border: 1px solid #2a3b52;
   padding: 15px 10px;
   border-radius: 10px;
+}
+@media (min-width: 1024px) {
+  .form__wrap {
+    padding: 30px 60px;
+  }
 }
 .form__text {
   font-family: Open Sans;
@@ -619,16 +925,35 @@ body {
   color: #2a3b52;
   position: relative;
 }
+@media (min-width: 1024px) {
+  .form__text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+}
 .form__text-subtitle {
   font-weight: 400;
   text-align: left;
   margin-bottom: 15px;
+}
+@media (min-width: 1024px) {
+  .form__text-subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 .form__text-mini {
   font-size: 10px;
   line-height: 14px;
   text-align: justify;
   text-indent: 15px;
+}
+@media (min-width: 1024px) {
+  .form__text-mini {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 .form__name {
   margin-bottom: 20px;
@@ -648,6 +973,13 @@ body {
   opacity: 0.6;
   border-radius: 10px;
   margin-bottom: 5px;
+}
+@media (min-width: 1024px) {
+  .form__input {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 580px;
+  }
 }
 .form__input:hover {
   box-shadow: 0 0 10px #b3c4db;
@@ -690,6 +1022,14 @@ body {
   border: none;
   border-radius: 10px;
 }
+@media (min-width: 1024px) {
+  .form__btn {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 200px;
+    padding: 10px 0;
+  }
+}
 .form__btn:hover {
   box-shadow: 0 0 10px #b3c4db;
 }
@@ -715,6 +1055,11 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media (min-width: 1024px) {
+  .form .checkbox.style-d {
+    padding-left: 40px;
+  }
 }
 .form .checkbox.style-d input {
   position: absolute;
@@ -745,6 +1090,12 @@ body {
   transition: background-color 0.25s ease;
   border-radius: 50%;
 }
+@media (min-width: 1024px) {
+  .form .checkbox.style-d .checkbox__checkmark {
+    height: 22px;
+    width: 22px;
+  }
+}
 .form .checkbox.style-d .checkbox__checkmark:after {
   content: "";
   position: absolute;
@@ -758,12 +1109,24 @@ body {
   opacity: 0;
   transition: opacity 0.25s ease;
 }
+@media (min-width: 1024px) {
+  .form .checkbox.style-d .checkbox__checkmark:after {
+    height: 12px;
+    width: 12px;
+  }
+}
 .form .checkbox.style-d .checkbox__body {
   color: #2a3b52;
   font-family: Open Sans;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+}
+@media (min-width: 1024px) {
+  .form .checkbox.style-d .checkbox__body {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .message {
@@ -854,12 +1217,40 @@ body {
   width: 250px;
   height: 250px;
 }
+@media (min-width: 768px) {
+  .background__wrap-one {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .background__wrap-one {
+    width: 450px;
+    height: 450px;
+    top: -100px;
+    left: -125px;
+  }
+}
 .background__wrap-two {
   top: 1055px;
   right: -100px;
   transform: rotate(-30deg);
   width: 250px;
   height: 250px;
+}
+@media (min-width: 768px) {
+  .background__wrap-two {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .background__wrap-two {
+    top: 50px;
+    right: -160px;
+    width: 450px;
+    height: 450px;
+  }
 }
 .background__wrap-three {
   top: 1250px;
@@ -868,12 +1259,38 @@ body {
   width: 250px;
   height: 250px;
 }
+@media (min-width: 768px) {
+  .background__wrap-three {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .background__wrap-three {
+    width: 450px;
+    height: 450px;
+  }
+}
 .background__wrap-four {
   top: 1360px;
   right: -130px;
   transform: rotate(5deg);
   width: 250px;
   height: 250px;
+}
+@media (min-width: 768px) {
+  .background__wrap-four {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .background__wrap-four {
+    top: 550px;
+    right: -130px;
+    width: 450px;
+    height: 450px;
+  }
 }
 .background__wrap-four1 {
   top: 1540px;
@@ -882,12 +1299,36 @@ body {
   width: 250px;
   height: 250px;
 }
+@media (min-width: 768px) {
+  .background__wrap-four1 {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .background__wrap-four1 {
+    width: 450px;
+    height: 450px;
+  }
+}
 .background__wrap-five {
   top: 1680px;
   right: -80px;
   transform: rotate(-40deg);
   width: 200px;
   height: 250px;
+}
+@media (min-width: 768px) {
+  .background__wrap-five {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .background__wrap-five {
+    width: 450px;
+    height: 450px;
+  }
 }
 .background__wrap-six {
   top: 1805px;
@@ -896,6 +1337,18 @@ body {
   width: 185px;
   height: 185px;
 }
+@media (min-width: 768px) {
+  .background__wrap-six {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .background__wrap-six {
+    width: 450px;
+    height: 450px;
+  }
+}
 .background__wrap-seven {
   top: 2291px;
   left: -90px;
@@ -903,11 +1356,38 @@ body {
   width: 250px;
   height: 250px;
 }
+@media (min-width: 768px) {
+  .background__wrap-seven {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .background__wrap-seven {
+    top: 450px;
+    left: -170px;
+    width: 450px;
+    height: 450px;
+    transform: rotate(155deg);
+  }
+}
 .background__wrap-eight {
   top: 2500px;
   right: -120px;
   width: 235px;
   height: 215px;
+}
+@media (min-width: 768px) {
+  .background__wrap-eight {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .background__wrap-eight {
+    width: 450px;
+    height: 450px;
+  }
 }
 .background__wrap-nine {
   top: 2720px;
@@ -916,12 +1396,36 @@ body {
   width: 250px;
   height: 250px;
 }
+@media (min-width: 768px) {
+  .background__wrap-nine {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .background__wrap-nine {
+    width: 450px;
+    height: 450px;
+  }
+}
 .background__wrap-ten {
   top: 2895px;
   right: -80px;
   transform: rotate(30deg);
   width: 200px;
   height: 200px;
+}
+@media (min-width: 768px) {
+  .background__wrap-ten {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .background__wrap-ten {
+    width: 450px;
+    height: 450px;
+  }
 }
 .background__wrap-eleven {
   top: 3145px;
@@ -930,6 +1434,18 @@ body {
   width: 250px;
   height: 250px;
 }
+@media (min-width: 768px) {
+  .background__wrap-eleven {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .background__wrap-eleven {
+    width: 450px;
+    height: 450px;
+  }
+}
 .background__wrap-twelve {
   top: 3360px;
   right: -60px;
@@ -937,6 +1453,18 @@ body {
   width: 200px;
   height: 200px;
   z-index: -2;
+}
+@media (min-width: 768px) {
+  .background__wrap-twelve {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .background__wrap-twelve {
+    width: 450px;
+    height: 450px;
+  }
 }
 .background__img {
   width: 100%;
