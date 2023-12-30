@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: Aquarelle;
-  src: url(../img/Aquarelle.ttf);
-}
 html {
   width: 100%;
   max-width: 100%;
@@ -1002,11 +998,23 @@ body {
   text-align: center;
   color: #2a3b52;
 }
+@media (min-width: 768px) {
+  .contacts__title {
+    margin-bottom: 30px;
+  }
+}
 @media (min-width: 1024px) {
   .contacts__title {
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .contacts__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 @media (min-width: 1024px) {
@@ -1035,11 +1043,14 @@ body {
   display: flex;
   margin-bottom: 15px;
 }
+@media (min-width: 768px) {
+  .contacts__linkwrap {
+    margin-bottom: 0px;
+  }
+}
 @media (min-width: 1024px) {
   .contacts__linkwrap {
     margin-bottom: 0px;
-    -webkit-animation: fadeInDown;
-            animation: fadeInDown;
   }
 }
 .contacts__linkwrap-bottom {
@@ -1643,7 +1654,7 @@ body {
   }
 }
 .background__wrap-six {
-  top: 1805px;
+  top: 1860px;
   left: -35px;
   transform: rotate(-7deg);
   width: 185px;
@@ -1668,7 +1679,7 @@ body {
   }
 }
 .background__wrap-seven {
-  top: 2291px;
+  top: 2435px;
   left: -90px;
   transform: rotate(190deg);
   width: 250px;
@@ -1692,13 +1703,15 @@ body {
   }
 }
 .background__wrap-eight {
-  top: 2500px;
-  right: -120px;
+  top: 2635px;
+  right: -95px;
   width: 235px;
   height: 215px;
+  transform: rotate(-20deg);
 }
 @media (min-width: 768px) {
   .background__wrap-eight {
+    top: 2530px;
     width: 300px;
     height: 300px;
     transform: rotate(-20deg);
@@ -1715,8 +1728,8 @@ body {
   }
 }
 .background__wrap-nine {
-  top: 2720px;
-  left: -110px;
+  top: 2850px;
+  left: -85px;
   transform: rotate(30deg);
   width: 250px;
   height: 250px;
@@ -1740,7 +1753,7 @@ body {
   }
 }
 .background__wrap-ten {
-  top: 2895px;
+  top: 3055px;
   right: -80px;
   transform: rotate(30deg);
   width: 200px;
@@ -1766,7 +1779,7 @@ body {
   }
 }
 .background__wrap-eleven {
-  top: 3145px;
+  top: 3235px;
   left: -65px;
   transform: rotate(30deg);
   width: 250px;
@@ -1792,7 +1805,7 @@ body {
   }
 }
 .background__wrap-twelve {
-  top: 3360px;
+  top: 3520px;
   right: -60px;
   transform: rotate(30deg);
   width: 200px;

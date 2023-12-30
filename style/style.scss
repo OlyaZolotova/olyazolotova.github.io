@@ -14,10 +14,10 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: Aquarelle;
-  src: url(../img/Aquarelle.ttf);
-}
+// @font-face {
+//   font-family: Aquarelle;
+//   src: url(../img/Aquarelle.ttf);
+// }
 html {
   width: 100%;
   max-width: 100%;
@@ -858,6 +858,9 @@ body {
     margin-bottom: 20px;
     text-align: center;
     color: #2a3b52;
+     @media (min-width: 768px) {
+      margin-bottom: 30px;
+    }
     @media (min-width: 1024px) {
       font-size: 16px;
       line-height: 22px;
@@ -865,6 +868,11 @@ body {
     }
   }
   &__wrap {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     @media (min-width: 1024px) {
       display: flex;
       justify-content: space-between;
@@ -887,9 +895,11 @@ body {
   &__linkwrap {
     display: flex;
     margin-bottom: 15px;
+     @media (min-width: 768px) {
+      margin-bottom: 0px;
+    }
     @media (min-width: 1024px) {
       margin-bottom: 0px;
-      animation: fadeInDown;
     }
     &-bottom {
       margin-bottom: 0px;
@@ -1418,7 +1428,7 @@ body {
       }
     }
     &-six {
-      top: 1805px;
+      top: 1860px;
       left: -35px;
       transform: rotate(-7deg);
       width: 185px;
@@ -1440,7 +1450,7 @@ body {
     }
 
     &-seven {
-      top: 2291px;
+      top: 2435px;
       left: -90px;
       transform: rotate(190deg);
       width: 250px;
@@ -1460,11 +1470,13 @@ body {
       }
     }
     &-eight {
-      top: 2500px;
-      right: -120px;
+      top: 2635px;
+      right: -95px;
       width: 235px;
       height: 215px;
+      transform: rotate(-20deg);
       @media (min-width: 768px) {
+        top: 2530px;
         width: 300px;
         height: 300px;
         transform: rotate(-20deg);
@@ -1479,8 +1491,8 @@ body {
       }
     }
     &-nine {
-      top: 2720px;
-      left: -110px;
+      top: 2850px;
+      left: -85px;
       transform: rotate(30deg);
       width: 250px;
       height: 250px;
@@ -1500,7 +1512,7 @@ body {
       }
     }
     &-ten {
-      top: 2895px;
+      top: 3055px;
       right: -80px;
       transform: rotate(30deg);
       width: 200px;
@@ -1522,7 +1534,7 @@ body {
       }
     }
     &-eleven {
-      top: 3145px;
+      top: 3235px;
       left: -65px;
       transform: rotate(30deg);
       width: 250px;
@@ -1544,7 +1556,7 @@ body {
       }
     }
     &-twelve {
-      top: 3360px;
+      top: 3520px;
       right: -60px;
       transform: rotate(30deg);
       width: 200px;
